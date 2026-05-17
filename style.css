@@ -1,0 +1,113 @@
+/*makes anchor link scrolling prettier*/
+html {
+    scroll-behavior: smooth;
+}
+
+/*Forces width and margin of body - this could come back to bite me if Im not using 
+blank side panels, probably should be a class*/
+body {
+    width:auto;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+h2 {
+    margin: 0
+}
+
+/*https://www.w3schools.com/css/css_navbar.asp, 
+https://www.w3schools.com/css/css_navbar_horizontal.asp
+Navbar css
+*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: gray;
+    border-radius: 8px;
+}
+
+/*Float left keeps navbar content to the left of the navbar container*/
+ul li {
+  float: left;
+}
+
+/*Handles spacing between <li> elements*/
+li {
+    margin:5px;
+    padding:5px
+}
+
+/*Footer positioning - stuck to bottom*/
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: gray;
+}
+
+/* grid was simpler here, generally I think I'd use a flexbox*/
+.center-content {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+/*Box Model Gallery Positioning */
+.row-1 {
+    border: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.row-2 {
+    border: 5%;
+    margin: 5%;
+    padding: 5%;
+}
+
+.row-3 {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.col-1 {
+margin: 0px;
+}
+
+.col-2 {
+margin: 5px;
+}
+
+.col-3 {
+margin: 10px;
+}
+
+/*font classes */
+
+.roboto {
+    font: 'Roboto';
+}
+
+.open-sans {
+    font-family: 'open-sans';
+}
+
+.playfair {
+    font-family: 'Playfair Display';
+}
+
+.lato {
+    font-family: 'lato';
+}
+
+.merriweather {
+    font-family: 'Merriweather';
+}
+
+.poppins {
+    font-family: 'poppins';
+}
