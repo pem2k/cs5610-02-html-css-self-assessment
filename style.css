@@ -19,7 +19,7 @@ h2 {
 https://www.w3schools.com/css/css_navbar_horizontal.asp
 Navbar css
 */
-ul {
+.nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -29,7 +29,7 @@ ul {
 }
 
 /*Float left keeps navbar content to the left of the navbar container*/
-ul li {
+.nav .navli {
   float: left;
 }
 
@@ -40,12 +40,11 @@ li {
 }
 
 /*Footer positioning - stuck to bottom*/
-footer {
+.sticky-footer {
   position: fixed;
   left: 0;
   bottom: 0;
-  width: 100%;
-  background-color: gray;
+  width:100%
 }
 
 /* grid was simpler here, generally I think I'd use a flexbox*/

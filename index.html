@@ -16,21 +16,21 @@
 
     <body>
         <nav>
-            <ul>
+            <ul class="nav">
                 
-                <li>
+                <li class="navli">
                     <a href="#seo-tags">SEO Tags</a>
                 </li>
 
-                <li>
+                <li class="navli">
                     <a href="#gallery-grid">Box Model Gallery</a>
                 </li>
 
-                <li>
-                    <a href="#itemized-font-list">test</a>
+                <li class="navli">
+                    <a href="#itemized-font-family-list">Font Families</a>
                 </li>
-                <li>
-                    <a>test</a>
+                <li class="navli">
+                    <a href="#font-sizes-and-units">Font Sizes and Units</a>
                 </li>
             </ul>
         </nav>
@@ -43,13 +43,40 @@
                 General Tags and their uses:
             </h2>
 
-            <h2>
+            <h2 id="#seo-tags">
                 Useful Tags for SEO:
             </h2>
+                <ol>
+                    <li>
+                        Title
+                    </li>
 
-            <section>test</section>
+                    <li>
+                        Meta: description
+                    </li>
 
-            <h2>
+                    <li>
+                        Meta: robots
+                    </li>
+
+                    <li>
+                        Headings
+                    </li>
+
+                    <li>
+                        Semantic Tags - Semantic HTML in general
+                    </li>
+
+                    <li>
+                        img (alt tags/accessibility)
+                    </li>
+
+                    <li>
+                        link: rel="canonical"
+                    </li>
+                </ol>
+
+            <h2 id="itemized-font-family-list">
                 Fonts:
             </h2>
 
@@ -62,10 +89,10 @@
                 <li class="poppins">Poppins</li>
             </ol>
 
-            <h2>
+            <h2 id="gallery-grid">
                 HTML Grid and CSS Box Model Gallery:
             </h2>
-                <div id="gallery-grid">
+                <div>
                     <div class="row-1">
                         <span class="col-1">
                             1,1
@@ -75,7 +102,7 @@
                             2,1
                         </span>
                         
-                        <span class="col-4">
+                        <span class="col-3">
                             3,1
                         </span>
                     </div>
@@ -89,7 +116,7 @@
                             2, 2
                         </span>
                         
-                        <span class="col-4">
+                        <span class="col-3">
                             3, 2
                         </span>
                     </div>
@@ -108,11 +135,48 @@
                         </span>
                     </div>
                 </div>
-            </div>
             
-            <h2>
-                test
+            
+            <h2 id="font-sizes-and-units">
+                Font sizes and units
             </h2>
+            <ol>
+                <li>
+                    <span style="font-size:10px;">The quick brown fox jumped over the lazy dog.</span>
+                    <ul>
+                        <li>Pixels: px is an absolute unit, it allows full precise control and equal font sizes across devices</li>
+                    </ul>
+                </li>
+                    
+                <li>
+                    <span style="font-size:10pt;">The quick brown fox jumped over the lazy dog.</span>
+                    <ul>
+                        <li>Points:</li>
+                    </ul>
+                </li>
+                    
+                <li>
+                    <span style="font-size:25%;">The quick brown fox jumped over the lazy dog.</span>
+                    <ul>
+                        <li>Percentages:</li>
+                    </ul>
+                </li>
+    
+                <li>
+                    <span style="font-size:1rem;">The quick brown fox jumped over the lazy dog.</span>
+                    <ul>
+                        <li>rem: rem is a unit that scales relative to the font size at the root html element. 
+                            For example, if the root has a defined font size of 16px, and I define a size in the child element of 0.5rem, my font will be 8px.</li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <span style="font-size:1rem;">The quick brown fox jumped over the lazy dog.</span>
+                    <ul>
+                        <li>em: em is a unit that works similarly to rem, however instead of scaling relative to the root element, it scales relative to the parent element.</li>
+                    </ul>
+                </li>
+            </ol>
             
             <section>test</section>
             
@@ -121,13 +185,12 @@
             </h2>
             
             <section>test</section>
+        </div>
 
-
-            
-
-
-        <footer>
-            test
+        <footer class="sticky-footer">
+            <ul class="foot-float">
+                <li class="foot-float">Example footer, stuck to bottom<li>
+            </ul>
         </footer>
     </body>
 </html>
