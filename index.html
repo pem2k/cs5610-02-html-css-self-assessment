@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta>
-
-        <title>
-
-        </title>
-
+        <meta charset="UTF-8">
+        <meta description="This page is a skills assessment for week 1 of Summer 2026 cs5610.">
+        <title>HTML and CSS Skills Assessment</title>
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
@@ -17,8 +14,8 @@
     </head>
 
     <body >
-        <nav>
-            <ul class="nav">
+    <nav>
+            <ul id="nav">
                 <li class="navli">
                     <a href="#useful-tags">Useful Tags</a>
                 </li>
@@ -38,177 +35,244 @@
                 <li class="navli">
                     <a href="#font-sizes-and-units">Font Sizes and Units</a>
                 </li>
+
+                <li class="navli">
+                    <a href="#positioning">Positioning</a>
+                </li>
             </ul>
         </nav>
-        <div id="body-container">
-        <div class="center-content">
-            <h1>
-               HTML and CSS Skills Assessment
-            </h1>
 
-            <h2 id="useful-tags">
-                Top 10 Most Useful Tags 
-            </h2>
-            <ol>
-                <li>
-                    div, span
-                </li>
-                <li>
-                    a
-                </li>
-                <li>
-                    p
-                </li>
-                <li>
-                    Headings (h1, h2, h3, ...)
-                </li>
-                <li>
-                    ol, ul, li
-                </li>
-                <li>
-                    main
-                </li>
-                <li>
-                    header, footer
-                </li>
-                <li>
-                    nav
-                </li>
-                <li>
-                    script
-                </li>
-                <li>
-                    table, tr, td
-                </li>
-            </ol>
-            <h2 id="seo-tags">
-                Useful Tags for SEO
-            </h2>
+        <div id="body-container">
+            <div id="center-content">
+                <h1>
+                    HTML and CSS Skills Assessment
+                </h1>
+
+                <h2 id="useful-tags">
+                    Top 10 Useful Tags 
+                </h2>
+
+                <ol>
+                    <li>
+                        div, span
+                    </li>
+                    <li>
+                        a
+                    </li>
+                    <li>
+                        p
+                    </li>
+                    <li>
+                        Headings (h1, h2, h3, ...)
+                    </li>
+                    <li>
+                        ol, ul, li
+                    </li>
+                    <li>
+                        main
+                    </li>
+                    <li>
+                        header, footer
+                    </li>
+                    <li>
+                        nav
+                    </li>
+                    <li>
+                        script
+                    </li>
+                    <li>
+                        table, tr, td
+                    </li>
+                </ol>
+
+                <!--
+                https://help.webflow.com/hc/en-us/articles/33961369965715-Semantic-HTML5-tags#the-benefits-of-semantic-tags
+                https://developers.google.com/search/docs/fundamentals/seo-starter-guide
+                https://www.semrush.com/blog/html-tags-for-seo/
+                https://www.seobility.net/en/wiki/H1-H6_headings#content-why-you-should-use-headings-on-your-website
+                -->
+                <h2 id="seo-tags">
+                    SEO - Webcrawlers and Accessibility
+                </h2>
 
                 <ol>
                     <li>
                         Title
+                        <ul><li>The title link is what search engines will use for the clickable name of the site in search results. A strong title helps boost rankings and is the first interaction the user will have with the site, making it important to define.</li></ul>
                     </li>
 
                     <li>
                         Meta: description
+                        <ul><li>The description tag is used by search engines to create the snippet that provides the summary of web content below the page listing in search results. Having a good description and snippet raises your site's search result rating.</li></ul>
                     </li>
 
                     <li>
-                        Meta: robots
-                    </li>
-
-                    <li>
-                        Headings
-                    </li>
-
-                    <li>
-                        Semantic Tags - Semantic HTML in general
-                    </li>
-
-                    <li>
-                        img (alt tags/accessibility)
+                        Meta: charset="UTF-8"
+                        <ul><li>This meta tag ensures webcrawlers correctly interpret the web pages content by using the correct character set.</li></ul>
                     </li>
 
                     <li>
                         link: rel="canonical"
+                        <ul><li>This relationship type goes in a link tag in the head. It points search engines towards the page it should index, this prevents two pages from the same site from competing with each other.</li></ul>
+                    </li>
+
+                    <li>
+                        Headings
+                        <ul><li>Structured headings provide a road map for accessibility features and webcrawlers. Good headings give search engines quick hierarchichal access to subtopics, boosting seo performance.</li></ul>
+                    </li>
+
+                    <li>
+                        Semantic Tags: header, footer, nav, main, section, etc.
+                        <ul><li>Semantic tags not only boost seo performance, but they also improve performance of screenreaders and accessibility in general.</li></ul>
+                    </li>
+
+                    <li>
+                        img - alt text
+                        <ul><li>Similarly to semantic tags, alt text increases accessibility, improving the experience of the users of those features and boosting SEO performance.</li></ul>
                     </li>
                 </ol>
+                
 
-            <h2 id="itemized-font-family-list">
-                Fonts
-            </h2>
+                <h2 id="itemized-font-family-list">
+                    Fonts
+                </h2>
 
-            <ol>
-                <li class="roboto">Roboto</li>
-                <li class="open-sans">Open Sans</li>
-                <li class="playfair">Playfair Display</li>
-                <li class="lato">Lato</li>
-                <li class="merriweather">Merriweather</li>
-                <li class="poppins">Poppins</li>
-            </ol>
+                <ol>
+                    <li id="roboto">Roboto</li>
+                    <li id="open-sans">Open Sans</li>
+                    <li id="playfair">Playfair Display</li>
+                    <li id="lato">Lato</li>
+                    <li id="merriweather">Merriweather</li>
+                    <li id="poppins">Poppins</li>
+                </ol>
 
-            <h2 id="gallery-grid">
-                HTML Grid and CSS Box Model Gallery:
-            </h2>
+                <h2 id="gallery-grid">
+                    HTML Grid and CSS Box Model Gallery
+                </h2>
 
-            <div>
-                <div class="row-1">
-                    <span class="col-1"></span>
-                    <span class="col-2"></span>
-                    <span class="col-3"></span>
+                <div id="gallery">
+                    <div class="row-1">
+                        <span id="col-1"></span>
+                        <span id="col-2"></span>
+                        <span id="col-3"></span>
+                    </div>
+                    
+                    <div class="row-2">
+                        <span id="col-1"></span>
+                        <span id="col-2"></span>
+                        <span id="col-3"></span>
+                    </div>
+
+                    <div class="row-3">
+                        <span id="col-1"></span>
+                        <span id="col-2"></span>
+                        <span id="col-3"></span>
+                    </div>
                 </div>
                 
-                <div class="row-2">
-                    <span class="col-1"></span>
-                    <span class="col-2"></span>
-                    <span class="col-3"></span>
-                </div>
-
-                <div class="row-3">
-                    <span class="col-1"></span>
-                    <span class="col-2"></span>
-                    <span class="col-3"></span>
-                </div>
-            </div>
-            
-            
-            <h2 id="font-sizes-and-units">
-                Font sizes and units
-            </h2>
-            <ol>
-
-                <!--https://en.wikipedia.org/wiki/Point_(typography)-->
-                <!--https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/font-size-->
-                <li>
-                    <span style="font-size:16pt;">The quick brown fox jumped over the lazy dog.</span>
-                    <ul>
-                        <li>Points: pt is an absolute unit, a pt is defined as 1/72 of an inch and is a hold over from the early days of typesetting. The sentence above is styled in 16pt font.</li>
-                    </ul>
-                </li>
-
-                <li>
-                    <span style="font-size:16px;">The quick brown fox jumped over the lazy dog.</span>
-                    <ul>
-                        <li>Pixels: px is an absolute unit, it allows full precise control and equal font sizes across devices. The sentence above is styled in 16pt font.</li>
-                    </ul>
-                </li>
                 
-                <li>
-                    <span style="font-size:0.9rem;">The quick brown fox jumped over the lazy dog.</span>
-                    <ul>
-                        <li>rem: rem is a unit that scales relative to the font size at the root html element. 
-                            For example, if the root has a defined font size of 16px, and I define a size in the child element of 0.5rem, my font will be 8px.</li>
-                    </ul>
-                </li>
-                
-                <li>
-                    <span style="font-size:xx-small;">The quick brown fox jumped over the lazy dog.</span>
-                    <ul>
-                        <li>Absolute units: These are fixed units that are based on the user's default font size.</li>
-                    </ul>
-                </li>
+                <h2 id="font-sizes-and-units">
+                    Font sizes and units
+                </h2>
+                <ol>
 
-                <li>
-                    <span style="font-size:0.5em;">The quick brown fox jumped over the lazy dog.</span>
-                    <ul>
-                        <li>em: em is a unit that works similarly to rem, however instead of scaling relative to the root element, it scales relative to the parent element.</li>
-                    </ul>
-                </li>
+                    <!--https://en.wikipedia.org/wiki/Point_(typography)-->
+                    <!--https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/font-size-->
+                    <li>
+                        <span style="font-size:16pt;">The quick brown fox jumped over the lazy dog.</span>
+                        <ul>
+                            <li>Points: pt is an absolute unit, a pt is defined as 1/72 of an inch and is a hold over from the early days of typesetting. The sentence above is styled in 16pt font.</li>
+                        </ul>
+                    </li>
 
-                <li>
-                    <span style="font-size:25%;">The quick brown fox jumped over the lazy dog.</span>
-                    <ul>
-                        <li>Percentages: percentages are a relative unit that are functionally the same as em, instead of using a number or decimal to define the relative relationship to the parent element, you use the percentage of the parent's font size. The above sentence is styled in 25% font size.</li>
-                    </ul>
-                </li>
+                    <li>
+                        <span style="font-size:16px;">The quick brown fox jumped over the lazy dog.</span>
+                        <ul>
+                            <li>Pixels: px is an absolute unit, it allows full precise control and equal font sizes across devices. The sentence above is styled in 16px font.</li>
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <span style="font-size:0.9rem;">The quick brown fox jumped over the lazy dog.</span>
+                        <ul>
+                            <li>rem: rem is a unit that scales relative to the font size at the root html element. 
+                                For example, if the root has a defined font size of 16px, and I define a size in the child element of 0.5rem, my font will be 8px.</li>
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <span style="font-size:xx-small;">The quick brown fox jumped over the lazy dog.</span>
+                        <ul>
+                            <li>Absolute units: These are fixed units that are based on the user's default font size.</li>
+                        </ul>
+                    </li>
 
-            </ol>
-        </div>
+                    <li>
+                        <span style="font-size:0.5em;">The quick brown fox jumped over the lazy dog.</span>
+                        <ul>
+                            <li>em: em is a unit that works similarly to rem, however instead of scaling relative to the root element, it scales relative to the parent element.</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <span style="font-size:25%;">The quick brown fox jumped over the lazy dog.</span>
+                        <ul>
+                            <li>Percentages: percentages are a relative unit that are functionally the same as em, instead of using a number or decimal to define the relative relationship to the parent element, you use the percentage of the parent's font size. The above sentence is styled in 25% font size.</li>
+                        </ul>
+                    </li>
+
+                </ol>
+
+                <h2 id="positioning">
+                    Positioning
+                </h2>
+
+                <ul>
+                    <li>
+                        Static Positioning: 
+                        <ul>
+                            <li>Static positioning is the default for all elements; it exists in its "usual" position, without any post placement or relativistic behavior. This is the positioning used for most elements on the page.</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        Fixed Positioning: 
+                        <ul>
+                            <li>Fixed positioning takes elements outside of the normal document flow, and moving them into a fixed top layer. This page uses fixed positioning for both the navbar and the footer, allowing the page content to scroll behind them.</li>
+                        </ul>
+                    </li>
+
+                    <li id="relative-pos">
+                        Relative Positioning: 
+                        <ul>
+                            <li>Relative positioning works like static positioning with an extra step. It exists within the normal document flow, but once it's placed, it's shifted. The parent of this list element is relatively positioned from the left of its parent container by 15%. </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        Absolute Positioning: 
+                        <ul>
+                            <li>Absolute positioning works similarly to fixed positioning in that elements are moved outside of the document flow into their own layer, they differ in that absolutely positioned elements don't rely on the position of the viewport. Below I've included two list elements to demonstrate this; one list element is absolutely positioned while the other is not. Because the two elements do not share the same layer, they'll overlap and jumble the text without the browser attempting to prevent it.</li>
+                            <ul>
+                                <li id="absolute-pos">
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+                                </li>
+                                <li >
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+                                </li>
+                            </ul>
+                        </ul>
+                    </li>
+                </ul>
+            </div>   
     </div>
-        <footer class="sticky-footer">
+
+        <footer id="sticky-footer">
             <p>Example footer, stuck to bottom with fixed positioning. This positioning allows elements to live outside of the normal document flow, instead "living" relative to the viewport.</p>
         </footer>
-        
+    
+    <!--
+    AI Disclosure: Claude CLI was used as an in IDE html/css reference and task tracker. No code was written agentically.    
+    -->
     </body>
 </html>
