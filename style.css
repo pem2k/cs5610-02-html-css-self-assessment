@@ -106,21 +106,21 @@ Navbar css
     padding: 15px;
 }
 
-#col-1 {
+.col-1 {
     display: inline-block;
     border: 2px solid black;
     margin: 2px;
     padding: 2px;
 }
 
-#col-2 {
+.col-2 {
     display: inline-block;
     border:5px dotted black;
     margin: 5px;
     padding: 5px;
 }
 
-#col-3 {
+.col-3 {
     display: inline-block;
     border: 10px dashed black;
     margin: 10px;
