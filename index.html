@@ -16,16 +16,15 @@
         <link rel="stylesheet" href="style.css">
     </head>
 
-    <body>
+    <body >
         <nav>
             <ul class="nav">
-                
                 <li class="navli">
-                    <a href="#seo-tags">SEO Tags</a>
+                    <a href="#useful-tags">Useful Tags</a>
                 </li>
 
                 <li class="navli">
-                    <a href="#gallery-grid">Box Model Gallery</a>
+                    <a href="#seo-tags">SEO Tags</a>
                 </li>
 
                 <li class="navli">
@@ -33,22 +32,57 @@
                 </li>
 
                 <li class="navli">
+                    <a href="#gallery-grid">Box Model Gallery</a>
+                </li>
+
+                <li class="navli">
                     <a href="#font-sizes-and-units">Font Sizes and Units</a>
                 </li>
             </ul>
         </nav>
-
+        <div id="body-container">
         <div class="center-content">
             <h1>
                HTML and CSS Skills Assessment
             </h1>
 
-            <h2>
-                General Tags and their uses:
+            <h2 id="useful-tags">
+                Top 10 Most Useful Tags 
             </h2>
-
-            <h2 id="#seo-tags">
-                Useful Tags for SEO:
+            <ol>
+                <li>
+                    div, span
+                </li>
+                <li>
+                    a
+                </li>
+                <li>
+                    p
+                </li>
+                <li>
+                    Headings (h1, h2, h3, ...)
+                </li>
+                <li>
+                    ol, ul, li
+                </li>
+                <li>
+                    main
+                </li>
+                <li>
+                    header, footer
+                </li>
+                <li>
+                    nav
+                </li>
+                <li>
+                    script
+                </li>
+                <li>
+                    table, tr, td
+                </li>
+            </ol>
+            <h2 id="seo-tags">
+                Useful Tags for SEO
             </h2>
 
                 <ol>
@@ -82,7 +116,7 @@
                 </ol>
 
             <h2 id="itemized-font-family-list">
-                Fonts:
+                Fonts
             </h2>
 
             <ol>
@@ -123,32 +157,35 @@
                 Font sizes and units
             </h2>
             <ol>
+
+                <!--https://en.wikipedia.org/wiki/Point_(typography)-->
+                <!--https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/font-size-->
                 <li>
-                    <span style="font-size:10px;">The quick brown fox jumped over the lazy dog.</span>
+                    <span style="font-size:16pt;">The quick brown fox jumped over the lazy dog.</span>
                     <ul>
-                        <li>Pixels: px is an absolute unit, it allows full precise control and equal font sizes across devices</li>
+                        <li>Points: pt is an absolute unit, a pt is defined as 1/72 of an inch and is a hold over from the early days of typesetting. The sentence above is styled in 16pt font.</li>
                     </ul>
                 </li>
-                    
+
                 <li>
-                    <span style="font-size:10pt;">The quick brown fox jumped over the lazy dog.</span>
+                    <span style="font-size:16px;">The quick brown fox jumped over the lazy dog.</span>
                     <ul>
-                        <li>Points:</li>
+                        <li>Pixels: px is an absolute unit, it allows full precise control and equal font sizes across devices. The sentence above is styled in 16pt font.</li>
                     </ul>
                 </li>
-                    
+                
                 <li>
-                    <span style="font-size:25%;">The quick brown fox jumped over the lazy dog.</span>
-                    <ul>
-                        <li>Percentages:</li>
-                    </ul>
-                </li>
-    
-                <li>
-                    <span style="font-size:0.5rem;">The quick brown fox jumped over the lazy dog.</span>
+                    <span style="font-size:0.9rem;">The quick brown fox jumped over the lazy dog.</span>
                     <ul>
                         <li>rem: rem is a unit that scales relative to the font size at the root html element. 
                             For example, if the root has a defined font size of 16px, and I define a size in the child element of 0.5rem, my font will be 8px.</li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <span style="font-size:xx-small;">The quick brown fox jumped over the lazy dog.</span>
+                    <ul>
+                        <li>Absolute units: These are fixed units that are based on the user's default font size.</li>
                     </ul>
                 </li>
 
@@ -158,20 +195,20 @@
                         <li>em: em is a unit that works similarly to rem, however instead of scaling relative to the root element, it scales relative to the parent element.</li>
                     </ul>
                 </li>
-            </ol>
-            
-            <section>test</section>
-            
-            <h2>
-                test
-            </h2>
-            
-            <section>test</section>
-        </div>
 
+                <li>
+                    <span style="font-size:25%;">The quick brown fox jumped over the lazy dog.</span>
+                    <ul>
+                        <li>Percentages: percentages are a relative unit that are functionally the same as em, instead of using a number or decimal to define the relative relationship to the parent element, you use the percentage of the parent's font size. The above sentence is styled in 25% font size.</li>
+                    </ul>
+                </li>
+
+            </ol>
+        </div>
+    </div>
         <footer class="sticky-footer">
-            Example footer, stuck to bottom with fixed positioning, allowing it to scroll with the rest of the web page.
+            <p>Example footer, stuck to bottom with fixed positioning. This positioning allows elements to live outside of the normal document flow, instead "living" relative to the viewport.</p>
         </footer>
+        
     </body>
-    
 </html>
