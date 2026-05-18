@@ -2,9 +2,11 @@
 <html>
     <head>
         <meta>
+
         <title>
 
         </title>
+
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
@@ -29,6 +31,7 @@
                 <li class="navli">
                     <a href="#itemized-font-family-list">Font Families</a>
                 </li>
+
                 <li class="navli">
                     <a href="#font-sizes-and-units">Font Sizes and Units</a>
                 </li>
@@ -39,6 +42,7 @@
             <h1>
                HTML and CSS Skills Assessment
             </h1>
+
             <h2>
                 General Tags and their uses:
             </h2>
@@ -46,6 +50,7 @@
             <h2 id="#seo-tags">
                 Useful Tags for SEO:
             </h2>
+
                 <ol>
                     <li>
                         Title
@@ -92,49 +97,26 @@
             <h2 id="gallery-grid">
                 HTML Grid and CSS Box Model Gallery:
             </h2>
-                <div>
-                    <div class="row-1">
-                        <span class="col-1">
-                            1,1
-                        </span>
 
-                        <span class="col-2">
-                            2,1
-                        </span>
-                        
-                        <span class="col-3">
-                            3,1
-                        </span>
-                    </div>
-                    
-                    <div class="row-2">
-                        <span class="col-1">
-                            1, 2
-                        </span>
-
-                        <span class="col-2">
-                            2, 2
-                        </span>
-                        
-                        <span class="col-3">
-                            3, 2
-                        </span>
-                    </div>
-
-                    <div class="row-3">
-                        <span class="col-1">
-                            1, 3
-                        </span>
-
-                        <span class="col-2">
-                            2, 3
-                        </span>
-                        
-                        <span class="col-3">
-                            2, 3
-                        </span>
-                    </div>
+            <div>
+                <div class="row-1">
+                    <span class="col-1"></span>
+                    <span class="col-2"></span>
+                    <span class="col-3"></span>
                 </div>
+                
+                <div class="row-2">
+                    <span class="col-1"></span>
+                    <span class="col-2"></span>
+                    <span class="col-3"></span>
+                </div>
+
+                <div class="row-3">
+                    <span class="col-1"></span>
+                    <span class="col-2"></span>
+                    <span class="col-3"></span>
+                </div>
+            </div>
             
             
             <h2 id="font-sizes-and-units">
@@ -163,15 +145,15 @@
                 </li>
     
                 <li>
-                    <span style="font-size:1rem;">The quick brown fox jumped over the lazy dog.</span>
+                    <span style="font-size:0.5rem;">The quick brown fox jumped over the lazy dog.</span>
                     <ul>
                         <li>rem: rem is a unit that scales relative to the font size at the root html element. 
                             For example, if the root has a defined font size of 16px, and I define a size in the child element of 0.5rem, my font will be 8px.</li>
                     </ul>
                 </li>
-                
+
                 <li>
-                    <span style="font-size:1rem;">The quick brown fox jumped over the lazy dog.</span>
+                    <span style="font-size:0.5em;">The quick brown fox jumped over the lazy dog.</span>
                     <ul>
                         <li>em: em is a unit that works similarly to rem, however instead of scaling relative to the root element, it scales relative to the parent element.</li>
                     </ul>
@@ -188,9 +170,8 @@
         </div>
 
         <footer class="sticky-footer">
-            <ul class="foot-float">
-                <li class="foot-float">Example footer, stuck to bottom<li>
-            </ul>
+            Example footer, stuck to bottom with fixed positioning, allowing it to scroll with the rest of the web page.
         </footer>
     </body>
+    
 </html>
